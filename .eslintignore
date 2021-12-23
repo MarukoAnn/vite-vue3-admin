@@ -1,0 +1,3 @@
+# eslint 忽视检查
+node_modules
+dist
