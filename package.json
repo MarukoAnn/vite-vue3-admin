@@ -32,14 +32,14 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged",
-            "commit-msg": "commitlint -x @commitlint/config-conventional  -E HUSKY_GIT_PARAMS"
+            "commit-msg": "commitlint  -E HUSKY_GIT_PARAMS",
+            "pre-commit": "lint-staged"
         }
     },
     "lint-staged": {
         "*.{ts,tsx,vue,js,jsx}": [
             "pnpm lint",
-            "prettier --config .prettierrc --write",
+            "prettier --write",
             "git add"
         ]
     }
